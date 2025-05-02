@@ -17,6 +17,8 @@ module.exports = {
   rules: {
     'react/no-unescaped-entities': 'off',
   },
+  env: { browser: true, node: true, es2020: true },
 };
+
 
 export default eslintConfig;

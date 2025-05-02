@@ -8,13 +8,11 @@ interface Post {
   title: string
 }
 
-interface PageProps {
-  params: {
-    id: string
-  }
+type PostPageProps = {
+  params: { id: string }
 }
 
-export default async function PostPage({ params }: PageProps) {
+export default async function Page({ params }: PostPageProps) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/photos/${params.id}`)
 
   if (!res.ok) {

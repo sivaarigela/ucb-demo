@@ -1,6 +1,5 @@
 // app/user/page.tsx
 import axios from 'axios';
-import { fetcher } from '../usersclient/fetcher';
 type UserData = {
   id: number;
   name: {
@@ -24,6 +23,7 @@ export default async function UserPage() {
     const res = await axios.get<UserData[]>('https://fakestoreapi.com/users');
     users = res.data;
   } catch (err) {
+    console.log(err);
     return <div>Failed to load users.</div>;
   }
 

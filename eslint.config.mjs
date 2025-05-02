@@ -17,7 +17,19 @@ module.exports = {
   rules: {
     'react/no-unescaped-entities': 'off',
   },
-  env: { browser: true, node: true, es2020: true },
+  env: {
+    es2023: true,
+    node: true,
+  },
+  overrides: [
+    {
+      files: ['**/*.mjs'],
+      env: {
+        es2023: true,
+        node: true,
+      },
+    },
+  ],
 };
 
 

@@ -8,6 +8,7 @@ interface Post {
   title: string
 }
 
+// promise should use for async type
 type Params = Promise<{ id: string }>
 
 export default async function Page(props: { params: Params }) {

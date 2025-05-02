@@ -16,7 +16,7 @@ export default async function GalleryPage() {
     images = res.data.map((item: any) => ({
       id: item.id,
       title: item.title,
-      url: `https://picsum.photos/seed/${item.id}/300/200`,
+      url: 'https://picsum.photos/seed/${item.id}/300/200',
     }));
   } catch (err) {
     return <div className="text-red-500 p-4">Failed to load gallery data.</div>;

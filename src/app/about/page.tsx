@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Image from "next/image";
+import Image from "next/image"; // Optional: For easier handling of requests
 
 type UserData = {
   name: string;
@@ -46,7 +46,7 @@ export default function AboutPage() {
   if (error) return <div>{error}</div>;
   return (
     <div className="grid items-center justify-items-center sm:p-0 font-[family-name:var(--font-geist-sans)]">
-      <main className="gap-[1px] row-start-2">
+      <main className="gap-[1px] row-start-2 bg-gray-100">
         <Image
           className="dark:invert"
           src="https://www.ucb.com/sites/default/files/2024-11/13.png"
@@ -68,7 +68,7 @@ export default function AboutPage() {
 
         </div>
 
-        <div className="w-1/3 mt-8 pl-3">
+        <div>
           <h4 className="text-lg font-semibold text-gray-800 mb-2 pt-4">
           Our purpose</h4>
           <p className='text-justify pt-2'>UCB is driven to ensure that everyone can live the best life they can, as free as possible from the challenges and uncertainty of disease. This ambition fuels our purpose: creating value in the lives of the people we serve, now and into the future.</p>

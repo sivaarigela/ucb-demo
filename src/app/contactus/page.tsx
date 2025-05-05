@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ContactUs() {
   return (
-    <div className="min-h-screen bg-gray-50 p-6 md:p-12">
+    <div className="min-h-screen bg-gray-50 p-6 md:p-12 bg-gray-100">
       <div className="overflow-hidden rounded-2xl shadow-lg mb-10">
         <Image
           className="w-full object-cover"

@@ -7,8 +7,8 @@ export default function Navbar() {
     <nav className="flex gap-6 p-4 bg-blue-500 text-white">
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
-      <Link href="/gallery">Gallery</Link>
-      <Link href="/contact">Contact</Link>
+      <Link href="/blogs">Blogs</Link>
+      <Link href="/contactus">Contact</Link>
     </nav>
   );
 }

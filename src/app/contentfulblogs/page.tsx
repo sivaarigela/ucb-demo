@@ -36,7 +36,7 @@ export default async function Home() {
           <h1 className='text-3xl font-bold mb-6 text-center'>Blogs</h1>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
             {posts.map((post) => (
-              <GalleryItem key={post.sys.id} id={post.sys.id} title={post.fields.title} imageUrl={post.fields.blogImage?.fields?.file?.url} />
+              <GalleryItem key={post.sys.id} id={1} title={post.fields.title} imageUrl={post.fields.blogImage?.fields?.file?.url} />
             ))}
           </div>
         </div>

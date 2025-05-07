@@ -3,6 +3,11 @@ const nextConfig = {
   images: {
     domains: ['via.placeholder.com', 'www.ucb.com', 'images.ctfassets.net'],
   },
+  "compilerOptions": {
+      "module": "esnext",
+      "target": "es6",
+  },
 };
 
-module.exports = nextConfig;
+
+export default nextConfig;

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 type GalleryItemProps = {
-  id: number;
-  title: string;
+  id: any;
+  title: any;
   imageUrl: string;
 };
 

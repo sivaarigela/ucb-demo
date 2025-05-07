@@ -39,8 +39,8 @@ export default async function Home() {
         {posts.map((post) => (
           <GalleryItem
             key={post.sys.id}
-            id={post.sys.id}
-            title={post.fields.title}
+            id={1}
+            title={'siva'}
             imageUrl={`https:${post.fields.blogImage?.fields?.file?.url}`}
           />
         ))}

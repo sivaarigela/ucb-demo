@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 type GalleryItemProps = {
-    id: number;
+    id: string;
     title: string;
     imageUrl: string;
   };

@@ -34,6 +34,7 @@ export default function AboutPage() {
       .then((response) => {
         setData(response.data);
         setLoading(false);
+        console.log(data);
       })
       .catch((err) => {
         console.log(err);

@@ -1,4 +1,3 @@
-// app/contentfulblogs/page.tsx
 import { createClient, Asset } from 'contentful';
 import GalleryItem from '../blogs/GalleryItem';
 import { BlogPostEntry, BlogPostSkeleton } from '../../types/contentful';
@@ -9,13 +8,12 @@ const client = createClient({
 });
 
 export default async function Home() {
+  console.log("Client data", client);
   const res = await client.getEntries<BlogPostSkeleton>({
     content_type: 'blogPost',
-    include: 2,
+    locale: 'en-US',
   });
   
-  
-
   const posts = res.items as BlogPostEntry[];
 
   return (

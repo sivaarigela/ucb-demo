@@ -10,7 +10,7 @@ const client = createClient({
 });
 
 interface BlogPostPageProps {
-  params: { id: string };
+  params: { id: any };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

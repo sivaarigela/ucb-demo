@@ -1,5 +1,5 @@
 import { createClient, Asset } from 'contentful';
-import GalleryItem from '../blogs/GalleryItem';
+import GalleryItem from '../contentfulblogs/ContentGalleryItem';
 import { BlogPostEntry, BlogPostSkeleton } from '../../types/contentful';
 
 const client = createClient({

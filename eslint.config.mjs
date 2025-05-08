@@ -1,36 +1,11 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import next from 'eslint-config-next';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
-
-module.exports = {
-  rules: {
-    'react/no-unescaped-entities': 'off',
-  },
-  env: {
-    es2023: true,
-    node: true,
-  },
-  overrides: [
-    {
-      files: ['**/*.mjs'],
-      env: {
-        es2023: true,
-        node: true,
-      },
+export default [
+  {
+    ...next,
+    rules: {
+      ...next.rules,
+      'react/no-unescaped-entities': 'off', // Disable specific rule if needed
     },
-  ],
-};
-
-
-export default eslintConfig;
+  },
+];
